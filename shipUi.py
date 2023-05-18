@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ship2.ui'
+# Form implementation generated from reading ui file 'ship1.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -24,11 +24,15 @@ class Ui_MainWindow(object):
         self.bg.setObjectName("bg")
         self.bgborder = QtWidgets.QLabel(self.centralwidget)
         self.bgborder.setGeometry(QtCore.QRect(0, 0, 801, 601))
-        self.bgborder.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"background-color: rgb(0, 0, 0);\n"
+        self.bgborder.setStyleSheet("background-color: rgb(0, 0, 0);\n"
 "border : 2px Solid White")
         self.bgborder.setText("")
         self.bgborder.setObjectName("bgborder")
+        self.gif = QtWidgets.QLabel(self.centralwidget)
+        self.gif.setGeometry(QtCore.QRect(20, 80, 771, 441))
+        self.gif.setText("")
+        self.gif.setPixmap(QtGui.QPixmap("../welcom.gif"))
+        self.gif.setObjectName("gif")
         self.timebox = QtWidgets.QTextBrowser(self.centralwidget)
         self.timebox.setGeometry(QtCore.QRect(670, 10, 121, 41))
         self.timebox.setStyleSheet("border-color: rgb(0, 0, 0);\n"
@@ -49,11 +53,6 @@ class Ui_MainWindow(object):
 "font: 16pt \"MS Shell Dlg 2\";\n"
 "border : 1px Solid White")
         self.exitButton.setObjectName("exitButton")
-        self.gif = QtWidgets.QLabel(self.centralwidget)
-        self.gif.setGeometry(QtCore.QRect(10, 90, 691, 421))
-        self.gif.setText("")
-        self.gif.setPixmap(QtGui.QPixmap("../listening.gif"))
-        self.gif.setObjectName("gif")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -61,7 +60,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "SHIP"))
         self.timebox.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
